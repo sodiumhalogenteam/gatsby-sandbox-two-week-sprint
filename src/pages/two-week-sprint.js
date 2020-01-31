@@ -18,14 +18,14 @@ import DevCatalyst from '../../content/assets/two-week-sprint/dev-catalyst.jpg';
 const TwoWeekStyles = styled.div`
   .main-pic-top {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     display: block;
     margin: auto;
     object-fit: cover;
   }
-  .header-image {
+  .header-section {
     position: relative;
-    bottom: 74px;
+    bottom: 106px;
   }
   .company-logo {
     position: relative;
@@ -90,6 +90,7 @@ const TwoWeekStyles = styled.div`
   .work-images img {
     margin-right: -70px;
     height: 12rem;
+    width: auto; 
     padding: 1rem;
   }
   .work-images img:nth-of-type(odd) {
@@ -97,8 +98,6 @@ const TwoWeekStyles = styled.div`
     top: 6rem;
   }
   .hex-right {
-    position: relative;
-    top: 20px;
     float: right;
     width: 14.5rem;
   }
@@ -108,7 +107,7 @@ const TwoWeekStyles = styled.div`
   }
   .side-hexes {
     position: relative;
-    top: 610px;
+    top: 70rem;
   }
   .two-week-timeline {
     position: relative;
@@ -123,6 +122,8 @@ const TwoWeekStyles = styled.div`
   }
 
   .days-of-process {
+    position: relative; 
+    bottom: 73rem; 
     color: #323e48;
     font-size: 1.1rem;
     display: flex;
@@ -143,11 +144,12 @@ const TwoWeekStyles = styled.div`
     left: 10px;
   }
   .days-of-process-visual-rep {
+    position: relative; 
     width: 750px;
+    bottom: 72rem; 
     display: block;
-    margin: 0 auto;
-    margin-left: 100%; /*this was just "%" maybe a error later*/
-  }
+    margin: 0 auto; 
+    }
   .days-of-process td {
     padding-left: 50px;
     padding-right: 50px;
@@ -187,7 +189,7 @@ const TwoWeekStyles = styled.div`
   }
   .process-step-card {
     position: relative;
-    top: 2rem;
+    bottom: 65rem;
     width: 40rem;
     margin: auto;
     margin-bottom: 5rem;
@@ -215,17 +217,9 @@ const TwoWeekStyles = styled.div`
     bottom: 3.4rem;
   }
 
-  .cost-estimate-and-survey,
-  .satisfied-customers,
-  .get-started,
-  .freq-asked-questions {
-    position: relative;
-    top: 15rem;
-  }
-
   .cost-estimate-and-survey {
     position: relative;
-    top: 30rem;
+    bottom: 25rem;
     text-align: center;
   }
 
@@ -260,11 +254,11 @@ const TwoWeekStyles = styled.div`
 
   .satisfied-customers {
     position: relative;
-    top: 35em;
+    bottom: 2em;
   }
   .satisfied-customers h1 {
     position: relative;
-    top: 3em;
+    bottom: 3em;
     text-align: center;
     font-family: jubilat;
     font-weight: 600;
@@ -274,8 +268,8 @@ const TwoWeekStyles = styled.div`
   .satisfied-customer {
     margin-bottom: -100px;
     position: relative;
-    top: 150px;
-    width: 31%;
+    bottom: 5rem;
+    width: 45%;
     display: block;
     margin: 0 auto;
   }
@@ -304,13 +298,14 @@ const TwoWeekStyles = styled.div`
     color: grey;
     font-size: 12px;
     bottom: 9rem;
-    left: 350px;
+    text-align: center; 
+    left: 19rem;
+    width: 20rem; 
     text-align: center;
   }
 
   .get-started {
     position: relative;
-    top: 50rem;
     text-align: center;
   }
 
@@ -335,7 +330,7 @@ const TwoWeekStyles = styled.div`
 
   .freq-asked-questions {
     position: relative;
-    top: 60rem;
+    top: 15rem;
   }
   .freq-asked-questions h2 {
     text-align: center;
@@ -343,13 +338,33 @@ const TwoWeekStyles = styled.div`
     font-weight: 500;
   }
 
-  .freq-asked-questions table {
-    margin: 0 auto;
-    width: 50%;
+  /* #freq-asked-questions-table h3: nth-of-type(even), 
+  #freq-asked-questions-table p: nth-of-type(even) {
+    position: relative; 
+    bottom: 8.5rem; 
+    left: 10rem; 
+  }
+
+  #freq-asked-questions-table h3: nth-of-type(odd), 
+  #freq-asked-questions-table p: nth-of-type(odd) {
+    position: relative; 
+    right: 10rem; 
+  } */
+
+  #freq-asked-questions-table h3{
+    text-align: center; 
+  }
+
+  #freq-asked-questions-table p {
+    position: relative; 
+    vertical-align: middle; 
+    text-align: center; 
+    width: 50%; 
+    left: 24%; 
   }
   .bottom-images {
     position: relative;
-    top: 30em;
+    bottom: 25rem;
   }
   .bottom-images img {
     width: 33.33%;
@@ -374,91 +389,22 @@ const TwoWeekStyles = styled.div`
     font-family: freight-sans-pro, sans-serif;
     font-weight: 500;
     font-size: 15px;
-    color: rgb(140, 140, 140);
   }
-  .freq-asked-questions table {
-    width: 60%;
-    position: relative;
-    left: 7%;
-  }
-  .freq-asked-questions th {
-    text-align: left;
-    font-family: freight-sans-pro;
-    font-weight: 500;
-    color: #979696;
-  }
-
-  .freq-asked-questions td {
-    height: 10px;
-    width: 25%;
-    font-family: freight-sans-pro;
-    color: #323e48;
-  }
-
-  .freq-asked-questions th:nth-of-type(even),
-  .freq-asked-questions td:nth-of-type(even) {
-    position: relative;
-    top: 200px;
-    margin: 0 auto;
-    right: 25%;
-  }
-  @media screen and (max-width: 1500px) {
-    .customer-desc {
-      width: 240px;
-    }
-
-    .freq-asked-questions th:nth-of-type(even),
-    .freq-asked-questions td:nth-of-type(even) {
-      position: relative;
-      top: 250px;
-    }
-    .bottom-images {
-      position: relative;
-      top: 600px;
+  @media screen and (max-width: 960px) {
+    .work-images img{
+      height: auto; 
+      width: 13rem; 
+      left: 10px; 
     }
   }
 
-  @media screen and (max-width: 1200px) {
-    .side-hexes {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 1000px) {
-    .satisfied-customer {
-      right: 20%;
-    }
-
-    .header-image {
-      position: relative;
-      bottom: 80px;
-    }
-    .main-pic-top-desc {
-      bottom: 240px;
-    }
-
-    .company-description {
-      bottom: 130px;
-    }
-    .freq-asked-questions {
-      margin: 0;
-    }
-    .freq-asked-questions th,
-    .freq-asked-questions td {
-      padding: 0;
-      margin: 0;
-    }
-    .freq-asked-questions tr {
-      width: fit-content;
-    }
-  }
 `;
 
 const TwoWeekSprintSite = () => (
   <TwoWeekStyles>
     {/* <title>Two Week Sprint Site</title> */}
 
-    <div className="header-image">
+    <div className="header-section">
       <img src={Logo} alt="logo" className="company-logo" />
       <img src={Header_Image} alt="header_image" className="main-pic-top" />
       <h1 className="text-center main-pic-top-header">Launch a Site in 2-Weeks</h1>
@@ -624,34 +570,16 @@ const TwoWeekSprintSite = () => (
     </div>
     <div className="freq-asked-questions">
       <h2>Frequently Asked Questions</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>What if I'm not organized?</td>
-            <td>What if I'm indecisive?</td>
-            <td>What if I don't know what I love but I know what I hate?</td>
-            <td>I'm not sure who to write content for my company</td>
-          </tr>
-          <tr>
-            <td>
-              Over the days following the work day, the SH team will make any remaining changes to your new site. You'll
-              be updated of progress, and we'll prepare for launch.
-            </td>
-            <td>
-              Over the days following the work day, the SH team will make any remaining changes to your new site. You'll
-              be updated of progress, and we'll prepare for launch.
-            </td>
-            <td>
-              Over the days following the work day, the SH team will make any remaining changes to your new site. You'll
-              be updated of progress, and we'll prepare for launch.
-            </td>
-            <td>
-              Over the days following the work day, the SH team will make any remaining changes to your new site. You'll
-              be updated of progress, and we'll prepare for launch.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="freq-asked-questions-table"> 
+      <h3>What if I'm not organized?</h3>
+      <p>Over the days following the work day, the SH team will make any remaining changes to your new site. You'll be updated of progress, and we'll prepare for launch.</p>
+      <h3>What if I'm indecisive?</h3>
+      <p>Over the days following the work day, the SH team will make any remaining changes to your new site. You'll be updated of progress, and we'll prepare for launch.</p>
+      <h3>What if I don't know what I love but I know what I hate?</h3>
+      <p>Over the days following the work day, the SH team will make any remaining changes to your new site. You'll be updated of progress, and we'll prepare for launch.</p>
+      <h3>I'm not sure who to write content for my company.</h3>
+      <p>Over the days following the work day, the SH team will make any remaining changes to your new site. You'll be updated of progress, and we'll prepare for launch.</p>
+      </div>
     </div>
     <div className="bottom-images">
       <img src={LogDNA} alt="Images/LogDNA_SW_working.jpg" />
